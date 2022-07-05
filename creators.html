@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+    <title>Marvel Characters & Comics
+    </title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index.html"><img src="/images/marvel.png" alt="logo"></a></li>
+            <li class="navlist"><a href="/characters.html">Characters</a></li>
+            <li class="navlist"><a href="/comics.html">Comics</a></li>
+            <li class="navlist"><a href="/creators.html">Creators</a></li>
+            <li class="navlist"><a href="/">About</a></li>
+            <li id="searchli">
+                <input type="text" id="search" placeholder="Search Here..">
+                <button id="searchinput"><i class="fa fa-search"></i></button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="cust_container" id="creator">
+        <div class="title">
+            <img src="images/creatorbg.jpg" alt="bg1">
+            <h1 class="lineUp">Experienced Marvel Creators</h1>
+            <p class="lineUp">Get to know about the hearty heros and incredible villans of Marvel Cinematic Universe</p>
+        </div>
+        <span id="par_char"></span>
+        <h3 id="headingchar">MARVEL CREATORS LIST</h3>
+        <div id="creators_card" class="my-5"></div>
+        <button id="loadMore" onclick="getCreators()">Load More</button>
+
+        <div id="logosimage">
+            <img src="/images/alogos.jpg" alt="">
+        </div>
+
+        <footer>
+            <div class="footerContent">
+                <p>©2022 MARVEL KNOWLEDGE</p>
+                <p>Connect with me
+                <a href=""><img src="/images/ig.png" alt=""></a>
+                <a href=""><img src="/images/fb.png" alt=""></a>
+                <a href=""><img src="/images/git.png" alt=""></a>
+            </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="all.js"></script>
+</body>
+</html>

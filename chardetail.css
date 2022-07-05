@@ -1,0 +1,106 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+/* navbar properties */
+nav{
+    max-width: 100%;
+}
+nav ul{
+    background-color: black;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: start !important;
+    align-items: center !important;
+    margin: 0px !important;
+    padding: 15px !important;
+    font-size: 15px !important;
+}
+
+nav ul li img{
+    width: 110px !important;
+    height: 40px !important;
+}
+
+nav ul li{
+    list-style: none !important;
+}
+
+.navlist{
+   display: block;
+    padding-left:25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navlist >a:hover{
+    color: rgb(41, 151, 255) !important;
+    transition: 200ms ease-in;
+}
+
+nav ul li a{
+    color: white !important;
+    text-decoration: none !important;
+    letter-spacing: 1px !important;
+}
+
+#searchli{
+    margin-left: auto;
+}
+
+#searchinput:hover{
+    background-color: white;
+    color: red;
+}
+
+nav ul li input{
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    padding: 5px !important;
+    margin: 0 !important;
+}
+
+nav ul li button{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0;
+    background-color: red;
+    color: white;
+}
+
+/* title Css*/
+.cust_container{
+    margin:0;
+}
+
+/* Cards Css */
+.custom-card{
+    display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+    border-radius: 0px;
+    -webkit-user-drag: none;
+    /* -webkit-user-select: none;   */
+    text-decoration: none;
+    color: inherit;
+}
+.custom-card:hover .custom-card-image{
+    backdrop-filter: blur(2px);
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+    transform: scale(1);
+    transition: 300ms ease-in-out;
+}
+.custom-card-image{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transform: scale(.9);
+    transition: 300ms ease-in-out;
+}
