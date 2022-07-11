@@ -18,7 +18,7 @@ nav ul{
     font-size: 15px !important;
 }
 
-nav ul li img{
+.logo{
     width: 110px !important;
     height: 40px !important;
 }
@@ -68,6 +68,10 @@ nav ul li button{
     color: white;
 }
 
+.toggle{
+    display: none;
+}
+
 /* title Css*/
 .cust_container{
     margin:0;
@@ -86,7 +90,8 @@ nav ul li button{
 .title h1{
     position: absolute;
     top: 5em;
-    left: 8.5em;
+    width: 100%;
+    text-align: center;
     font-size: 50px;
     letter-spacing: 1px;
     text-shadow: 20px black;
@@ -96,14 +101,15 @@ nav ul li button{
 .title p{
     position: absolute;
     top: 19em;
-    left: 21em;
+    width: 100%;
+    text-align: center;
     font-size: 17px;
     letter-spacing: 2px;
     line-height: 25px;
-    max-width: 80%;
     color: whitesmoke;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 .lineUp {
     animation: 2s anim-lineUp ease-out;
@@ -125,26 +131,31 @@ nav ul li button{
       transform: translateY(0%);
     }
   }
-
 /* parallelogram characters */
-#par_char {
-    width: 90%;
-    height: 60px;
-    transform: skew(20deg);
-    background: white;
-    position: absolute;
-    top: 34em;
-    left:5em;
-}
+.cen{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}  
 
-#headingchar{
-    position: absolute;
-    top: 22.3em;
-    left:24.5em;
-    font-size: 25px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-weight: bold;
-}
+#par_char {
+      width: 90%;
+      height: 60px;
+      transform: skew(20deg);
+      background: white;
+      position: absolute;
+      top: 33em;
+  }
+  
+  #headingchar{
+      position: absolute;
+      top: 21.5em;
+      width: 100%;
+      font-size: 25px;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
 
 /* Cards Css */
 #characters_card, #comics_card, #creators_card{
@@ -153,7 +164,8 @@ nav ul li button{
     max-width: 100%;
     flex-wrap: wrap;
 }
-.custom-card{
+
+    .custom-card{
     display: flex;
     flex-direction: row;
     margin-left: 12px;
@@ -248,7 +260,6 @@ nav ul li button{
     font-size: 20px;
     border-radius: 10px;
 }
-
 #loadMore:hover{
     transition: 300ms ease-in-out;
     background-color: rgb(47, 120, 188);
@@ -260,6 +271,7 @@ nav ul li button{
     max-width: 100%;
     max-height: 10%;
 }
+
 #logosimage img{
     width: 100%;
     height: 10%;
@@ -279,6 +291,7 @@ footer{
     color: whitesmoke;
     padding: 10px;
     margin-bottom: 0px;
+    font-size: 15px;
 }
 .footerContent p a img{
     width: 15px;
@@ -288,4 +301,660 @@ footer{
 .footerContent p a{
     padding: 2px;
     margin-left: 3px;
+}
+/* laptop large */
+@media only screen and (min-width: 1255px) and (max-width: 1440px) {
+    
+    /* parallelogram characters */
+    #par_char {
+        width: 90%;
+        height: 60px;
+        top: 30em;
+        }
+
+    #headingchar{
+        top: 20em;
+        /* font-size: 20px; */
+    }
+    /* Cards Css */
+    .custom-card{
+        margin-left: 8px;
+        width: 170px;
+        height: 250px;
+    }
+    .custom-card-image{
+        width: 170px;
+        height: 250px;
+}
+#loadMore{
+    padding: 12px 20px 12px 20px;
+    margin-bottom: 28px;
+    font-size: 19px;
+    border-radius: 10px;
+}
+}
+
+/* medium large */
+@media only screen and (min-width: 1026px) and (max-width: 1250px) {
+    .title h1{
+        top: 5.5em;
+        font-size: 38px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }  
+    .title p{
+        top: 18em;
+        font-size: 15px;
+        letter-spacing: 0.7px;
+        line-height: 23px;
+    }
+    
+    /* parallelogram characters */
+    #par_char {
+        width: 90%;
+        height: 50px;
+        top: 26.8em;
+        }
+
+    #headingchar{
+        top: 22em;
+        font-size: 20px;
+    }
+    /* Cards Css */
+    .custom-card{
+        margin-left: 8px;
+        width: 150px;
+        height: 220px;
+    }
+    .custom-card-image{
+        width: 150px;
+        height: 220px;
+}
+#loadMore{
+    padding: 12px 20px 12px 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+}
+
+
+/* small laptop*/
+@media only screen and (max-width: 1024px) {
+
+/* title css */
+.title h1{
+    top: 6em;
+    font-size: 33px;
+    letter-spacing: 1px;
+    text-shadow: 15px black;
+}  
+.title p{
+    top: 16.5em;
+    font-size: 15px ;
+    letter-spacing: 0.5px;
+    line-height: 13px;
+}
+
+/* parallelogram characters */
+#par_char {
+width: 90%;
+height: 45px;
+top: 22.5em;
+}
+
+#headingchar{
+top: 20.5em;
+font-size: 18px;
+}
+
+/* Cards Css */
+.custom-card{
+    margin-left: 8px;
+    width: 135px;
+    height: 220px;
+}
+.custom-card-image{
+    width: 130px;
+    height: 220px;
+}
+
+#loadMore{
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+}
+
+/* smallest laptop */
+@media only screen and (min-width:769px) and (max-width: 915px) {
+
+    /* navbar css */
+    nav ul{
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+    nav ul li img{
+        width: 90px !important;
+        height: 33px !important;
+    }
+    .navlist{
+         padding-left:15px;
+    }
+    nav ul li input{
+        font-size: 12px !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+    }
+    
+    nav ul li button{
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    /* title css */
+    .title h1{
+        top: 6em;
+        font-size: 28px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }  
+    .title p{
+        top: 14em;
+        font-size: 15px ;
+        letter-spacing: 0.5px;
+        line-height: 13px;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 45px;
+    top: 19.8em;
+    }
+
+    #headingchar{
+    top: 18em;
+    font-size: 18px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 8px;
+        width: 130px;
+        height: 190px;
+    }
+    .custom-card-image{
+        width: 130px;
+        height: 190px;
+    }
+
+    #loadMore{
+        padding: 10px 18px 8px 18px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    
+    /* footer css */
+    .footerContent p{
+        padding: 8px;
+        font-size: 12px;
+    }
+    .footerContent p a img{
+        width: 12px;
+        height: 12px;
+        margin-bottom: 4px;
+    }
+
+} 
+
+/* Tablet */
+@media only screen and (min-width:430px) and (max-width: 768px) {
+
+    /* navbar css */
+    nav ul{
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+    nav ul li img{
+        width: 90px !important;
+        height: 33px !important;
+    }
+    .navlist{
+         padding-left:15px;
+    }
+    nav ul li input{
+        font-size: 13px !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+    }
+    
+    nav ul li button{
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    /* title css */
+    .title h1{
+        top: 6em;
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }  
+    .title p{
+        top: 13.5em;
+        font-size: 14px ;
+        letter-spacing: 0.5px;
+        line-height: 13px;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 40px;
+    top: 17em;
+    }
+
+    #headingchar{
+    top: 17.8em;
+    font-size: 16px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 8px;
+        width: 115px;
+        height: 170px;
+    }
+    .custom-card-image{
+        width: 115px;
+        height: 170px;
+    }
+
+    #loadMore{
+        padding: 10px 18px 8px 18px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    
+    /* footer css */
+    .footerContent p{
+        padding: 8px;
+        font-size: 11px;
+    }
+    .footerContent p a img{
+        width: 12px;
+        height: 12px;
+        margin-bottom: 4px;
+    }
+
+
+}
+
+/* small Tablet */
+@media only screen and (min-width:426px) and (max-width: 640px) {
+
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 0px; 
+    }
+
+    #searchli{
+        margin-right: 30px;
+        text-align: right;
+        
+    }
+    nav ul li input{
+        font-size: 10px !important;
+        border-radius: 6px !important;
+        padding:3px 6px 3px 6px !important;
+        margin: 0 !important;
+        width: 50%;
+        border: none;
+    }
+    nav ul li button{
+        padding: 0;
+        border-radius: 10px;
+        border: none;
+        margin-left: 4px;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 12px !important;
+        height: 14px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 12px !important;
+        font-size: 13px !important;
+    }
+    
+    .logo{
+        display: inline;
+        width: 90px !important;
+        height: 35px !important;
+    }
+    #searchinput{
+        position: absolute;
+        float:right;
+    }
+    
+
+    /* title css */
+    .title h1{
+        top: 6em;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }  
+    .title p{
+        top: 13em;
+        font-size: 12px ;
+        letter-spacing: 0.5px;
+        line-height: 13px;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 40px;
+    top: 14.4em;
+    }
+
+    #headingchar{
+    top: 16em;
+    font-size: 15px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 8px;
+        width: 115px;
+        height: 170px;
+    }
+    .custom-card-image{
+        width: 115px;
+        height: 170px;
+    }
+
+    #loadMore{
+        padding: 10px 18px 8px 18px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    
+    /* footer css */
+    .footerContent p{
+        padding: 8px;
+        font-size: 11px;
+    }
+    .footerContent p a img{
+        width: 12px;
+        height: 12px;
+        margin-bottom: 4px;
+    }
+
+}
+
+/* Medium Mobile Css */
+@media only screen and (min-width:374px) and (max-width: 426px) {
+    
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 3px; 
+    }
+
+    #searchli{
+        margin-right: 30px;
+        text-align: right;
+        
+    }
+    nav ul li input{
+        font-size: 10px !important;
+        border-radius: 6px !important;
+        padding:2px 5px 2px 5px !important;
+        margin: 0 !important;
+        width: 50%;
+        border: none;
+    }
+    nav ul li button{
+        padding: 2px;
+        border-radius: 10px;
+        border: none;
+        margin: 0;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 10px !important;
+        height: 12px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 15px !important;
+        font-size: 15px !important;
+    }
+    
+    .logo{
+        display: inline;
+        width: 80px !important;
+        height: 32px !important;
+    }
+    #searchinput{
+        position: absolute;
+        float:right;
+    }
+     
+    /* title css */
+    .title h1{
+        top: 6em;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }  
+    .title p{
+        top: 12em;
+        font-size: 10px ;
+        letter-spacing: 0.5px;
+        line-height: 13px;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 30px;
+    top: 10.7em;
+    }
+
+    #headingchar{
+    top: 13em;
+    font-size: 14px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 5px;
+        width: 115px;
+        height: 180px;
+    }
+    .custom-card-image{
+        width: 115px;
+        height: 180px;
+    }
+
+    #loadMore{
+        padding: 8px 18px 8px 18px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    
+    /* footer css */
+    .footerContent p{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .footerContent p a img{
+        width: 10px;
+        height: 10px;
+        margin-bottom: 2px;
+    }
+
+}
+
+/*  small Mobile Css */
+@media only screen and (max-width:374px){
+    
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 3px; 
+    }
+
+    #searchli{
+        margin-right: 30px;
+        text-align: right;
+        
+    }
+    nav ul li input{
+        font-size: 10px !important;
+        border-radius: 6px !important;
+        padding:2px 5px 2px 5px !important;
+        margin: 0 !important;
+        width: 50%;
+        border: none;
+    }
+    nav ul li button{
+        padding: 2px;
+        border-radius: 10px;
+        border: none;
+        margin: 0;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 10px !important;
+        height: 12px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 15px !important;
+        font-size: 15px !important;
+    }
+    
+    .logo{
+        display: inline;
+        width: 80px !important;
+        height: 32px !important;
+    }
+    #searchinput{
+        position: absolute;
+        float:right;
+    }
+     
+    /* title css */
+    .title h1{
+        top: 6em;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }  
+    .title p{
+        top: 13em;
+        font-size: 8.5px ;
+        letter-spacing: 0.5px;
+        line-height: 13px;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 30px;
+    top: 9.8em;
+    }
+
+    #headingchar{
+    top: 12.5em;
+    font-size: 13px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 5px;
+        width: 100px;
+        height: 150px;
+    }
+    .custom-card-image{
+        width: 100px;
+        height: 150px;
+    }
+
+    #loadMore{
+        padding: 8px 18px 8px 18px;
+        margin-bottom: 20px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+    
+    /* footer css */
+    .footerContent p{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .footerContent p a img{
+        width: 10px;
+        height: 10px;
+        margin-bottom: 2px;
+    }
+
 }

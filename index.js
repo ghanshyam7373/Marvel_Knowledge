@@ -7,17 +7,26 @@ var $comic_owl = $("#comics_card");
 const setting = 
     {
         loop:true,
-        margin:5,
+        margin:4,
         nav:true,
         responsive:{
             0:{
                 items:1
             },
-            600:{
+            300:{
                 items:3
             },
+            600:{
+                items:4
+            },
             1000:{
+                items:5
+            },
+            1440:{
                 items:7
+            },
+            2560:{
+                items:10
             }
         }
     }
@@ -107,9 +116,19 @@ const getCreators = ()=>{
     })
 }
 
-// addEventListener('onload',getCharacters())
-// addEventListener('onload',getComics())
+// var ul = document.querySelector('ul');
 
+// const dropdownFunction= () => {
+//     const div = document.createElement('div');
+//     for(let i=0;i<4;i++){
+//         let navlist = document.getElementsByClassName('navlist')[i];
+//         div.append(navlist);
+//         console.log(document.getElementsByClassName('navlist')[i]);
 
-getCharacters()
-getComics()
+//     }
+//         div.classList.add('navlistdiv');
+//     ul.append('div');
+// }
+    
+addEventListener('onload',getCharacters())
+addEventListener('onload',getComics())

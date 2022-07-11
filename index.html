@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="/images/marvel ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/duoe2yt88/image/upload/v1657117474/Images/marvel_ico_ku9fqz.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,16 +22,20 @@
 <body>
     <nav> 
         <ul>
-            <li><a href="/index.html"><img src="https://res.cloudinary.com/duoe2yt88/image/upload/v1657043045/Images/marvel_dppbnz.png" alt="logo"></a></li>
-            <li class="navlist"><a href="/characters.html">Characters</a></li>
-            <li class="navlist"><a href="/comics.html">Comics</a></li>
-            <li class="navlist"><a href="/creators.html">Creators</a></li>
-            <li class="navlist"><a href="/">About</a></li>
-            <li id="searchli">
-                <input type="text" id="search" placeholder="Search Here..">
-                <button id="searchinput"><i class="fa fa-search"></i></button>
+            <li><a href="/index.html"><img class="logo" src="https://res.cloudinary.com/duoe2yt88/image/upload/v1657043045/Images/marvel_dppbnz.png" alt="logo"></a></li>
+                <li class="navlist"><a href="/characters.html">Characters</a></li>
+                <li class="navlist"><a href="/comics.html">Comics</a></li>
+                <li class="navlist"><a href="/creators.html">Creators</a></li>
+                <li class="navlist"><a href="/">About</a></li>
+                <li id="searchli">
+                    <input type="text" id="search" placeholder="Search Here..">
+                    <button id="searchinput"><i class="fa fa-search"></i></button>
+    
+                </li>
+                <li>
+                    <div class="right"><button class="toggle"onclick="dropdownFunction()"><i class="fa fa-bars"></i></button></div>
 
-            </li>
+                </li>
         </ul>
     </nav>
 
@@ -41,8 +45,8 @@
             <h1 class="lineUp">Gain Knowledge about Marvel Cinematic Universe</h1>
             <p class="lineUp">The Marvel Cinematic Universe is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics.</p>
         </div> 
-        
-        <span id="par_char"></span>
+        <div class="cen">
+        <span id="par_char"></span></div>
         <h3 id="headingchar">FEATURED CHARACTERS</h3>
         <div id="characters_card" class="my-5 owl-carousel owl-theme">
         </div>
@@ -52,8 +56,8 @@
             <h1>Stan Lee</h1>
             <p>Stan Lee was an American comic-book writer, editor, and publisher, who was executive vice president and publisher of Marvel Comics.Lee co-created Spider-Man, the Hulk, Doctor Strange, the Fantastic Four, Iron Man, Daredevil, Thor, the X-Men, and many other fictional characters, introducing a thoroughly shared universe into superhero comic books.</p>
         </div>
-        
-        <span id="par_com"></span>
+        <div class="cen">
+        <span id="par_com"></span></div>
         <h3 id="headingcom">FEATURED COMICS</h3>
         <div id="comics_card" class="my-5 owl-carousel owl-theme">
         </div>

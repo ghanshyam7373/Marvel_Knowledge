@@ -18,7 +18,7 @@ nav ul{
     font-size: 15px !important;
 }
 
-nav ul li img{
+.logo{
     width: 110px !important;
     height: 40px !important;
 }
@@ -26,7 +26,6 @@ nav ul li img{
 nav ul li{
     list-style: none !important;
 }
-
 .navlist{
    display: block;
     padding-left:25px;
@@ -66,6 +65,10 @@ nav ul li button{
     margin: 0;
     background-color: red;
     color: white;
+}
+
+.toggle{
+    display: none;
 }
 
 /* title Css*/
@@ -128,23 +131,29 @@ nav ul li button{
     }
   }
 /* parallelogram characters */
-  #par_char {
+.cen{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}  
+
+#par_char {
       width: 90%;
       height: 60px;
       transform: skew(20deg);
       background: white;
       position: absolute;
       top: 35em;
-      left:5em;
   }
   
   #headingchar{
       position: absolute;
-      top: 23em;
-      left:24.5em;
+      top: 22.8em;
+      width: 100%;
       font-size: 25px;
       font-family: 'Kdam Thmor Pro', sans-serif;
       font-weight: bold;
+      text-align: center;
     }
 
 /* Cards Css */
@@ -289,13 +298,13 @@ nav ul li button{
     background: white;
     position: absolute;
     top: 100em;
-    left:5em;
   }
 
 #headingcom{
     position: absolute;
     top: 64.5em;
-    left:25em;
+    width: 100%;
+    text-align: center;
     font-size: 25px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-weight: BOLD;
@@ -316,6 +325,7 @@ footer{
     color: whitesmoke;
     padding: 10px;
     margin-bottom: 0px;
+    font-size: 15px;
 }
 .footerContent p a img{
     width: 15px;
@@ -326,3 +336,839 @@ footer{
     padding: 2px;
     margin-left: 3px;
 }
+/* laptop large */
+@media only screen and (min-width: 1255px) and (max-width: 1440px) {
+    /* parallelogram characters */
+    #par_char {
+        width: 90%;
+        height: 60px;
+        top: 32em;
+        }
+
+    #headingchar{
+        top: 21em;
+    }
+
+    .stan h1{
+        top: 29em;
+        right: 1.5em;
+    }
+    
+    .stan p{
+        top: 81em;
+        right: 4.2em;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 60px;
+        top: 95em;
+    }
+
+    #headingcom{
+        top: 61.3em;
+        font-size: 25px;
+    }
+}
+
+/* medium large */
+@media only screen and (min-width: 1026px) and (max-width: 1250px) {
+    /* parallelogram characters */
+    .title h1{
+        top: 6em;
+        left: 1.5em;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }  
+    .title p{
+        top: 19.5em;
+        left: 4.2em;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        line-height: 23px;
+        max-width: 80%;
+    }
+
+    #par_char {
+        width: 90%;
+        height: 50px;
+        top: 28em;
+        }
+
+    #headingchar{
+        top: 18.5em;
+    }
+
+    .stan h1{
+        top: 30em;
+        right: 1.5em;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }
+    
+    .stan p{
+        top: 78em;
+        right: 4.2em;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        line-height: 23px;
+        max-width: 80%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 50px;
+        top: 87em;
+    }
+
+    #headingcom{
+        top: 56em;
+        font-size: 25px;
+    }
+}
+
+
+/* small laptop*/
+@media only screen and (max-width: 1024px) {
+
+    /* title Css*/
+    .title h1{
+        top: 6em;
+        left: 1.5em;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }  
+    .title p{
+        top: 19.5em;
+        left: 4.2em;
+        font-size: 13.2px;
+        letter-spacing: 0.7px;
+        line-height: 23px;
+        max-width: 80%;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 40px;
+    top: 24em;
+    }
+
+    #headingchar{
+    top: 18.5em;
+    font-size: 21px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 10px;
+        width: 200px;
+    }
+    .custom-card-image{
+        width: 200px;
+    }
+
+    /* stan-lee */
+    .stan h1{
+        top: 27em;
+        right: 1.5em;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }
+    .stan p{
+        top: 75em;
+        right: 4.2em;
+        font-size: 13.2px;
+        letter-spacing: 0.7px;
+        line-height: 23px;
+        max-width: 60%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 40px;
+        top: 77.3em;
+    }
+
+    #headingcom{
+        top: 56.5em;
+        font-size: 22px;
+    }
+
+}
+
+/* small laptop */
+@media only screen and (min-width:769px) and (max-width: 915px) {
+
+    /* navbar css */
+    nav ul{
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+    nav ul li img{
+        width: 90px !important;
+        height: 33px !important;
+    }
+    .navlist{
+         padding-left:15px;
+    }
+    nav ul li input{
+        font-size: 12px !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+    }
+    
+    nav ul li button{
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    /* title Css*/
+    .title h1{
+        top: 6em;
+        left: 1.5em;
+        font-size: 24px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }  
+    .title p{
+        top: 15em;
+        left: 3em;
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        line-height: 20px;
+        max-width: 80%;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 35px;
+    top: 21em;
+    }
+
+    #headingchar{
+    top: 18em;
+    font-size: 19px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 10px;
+        width: 180px;
+        height: 250px;
+    }
+    .custom-card-image{
+        width: 180px;
+        height: 250px;
+    }
+
+    /* stan-lee */
+    .stan h1{
+        top: 34em;
+        right: 1.5em;
+        font-size: 24px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }
+    .stan p{
+        top: 70.5em;
+        right: 3.5em;
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        line-height: 20px;
+        max-width: 80%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 35px;
+        top: 69em;
+    }
+
+    #headingcom{
+        top: 58.5em;
+        font-size: 19px;
+    }
+
+    /* footer css */
+    .footerContent p{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footerContent p a img{
+        width: 14px;
+        height: 14px;
+        margin-bottom: 2px;
+    }
+
+} 
+
+/* Tablet */
+@media only screen and (min-width:430px) and (max-width: 768px) {
+
+    /* navbar css */
+    nav ul{
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+    nav ul li img{
+        width: 90px !important;
+        height: 33px !important;
+    }
+    .navlist{
+         padding-left:15px;
+    }
+    nav ul li input{
+        font-size: 13px !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+    }
+    
+    nav ul li button{
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    /* title Css*/
+    .title h1{
+        top: 7em;
+        left: 1em;
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }  
+    .title p{
+        top: 17.5em;
+        left: 2.3em;
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        line-height: 21px;
+        max-width: 80%;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 30px;
+    top: 20em;
+    }
+
+    #headingchar{
+    top: 20.5em;
+    font-size: 16px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 10px;
+        width: 180px;
+        height: 250px;
+    }
+    .custom-card-image{
+        width: 180px;
+        height: 250px;
+    }
+
+    /* stan-lee */
+    .stan h1{
+        top: 34em;
+        right: 1.5em;
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }
+    .stan p{
+        top: 74em;
+        right: 3.5em;
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        line-height: 21px;
+        max-width: 75%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 30px;
+        top: 64em;
+    }
+
+    #headingcom{
+        top: 64.5em;
+        font-size: 16px;
+    }
+
+    /* footer css */
+    .footerContent p{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .footerContent p a img{
+        width: 12px;
+        height: 12px;
+        margin-bottom: 2px;
+    }
+
+}
+
+/* small Tablet */
+@media only screen and (min-width:426px) and (max-width: 640px) {
+
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 0px; 
+    }
+
+    #searchli{
+        margin-right: 30px;
+        text-align: right;
+        
+    }
+    nav ul li input{
+        font-size: 10px !important;
+        border-radius: 6px !important;
+        padding:3px 6px 3px 6px !important;
+        margin: 0 !important;
+        width: 50%;
+        border: none;
+    }
+    nav ul li button{
+        padding: 0;
+        border-radius: 10px;
+        border: none;
+        margin-left: 4px;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 12px !important;
+        height: 14px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 12px !important;
+        font-size: 13px !important;
+    }
+    
+    .logo{
+        display: inline;
+        width: 90px !important;
+        height: 35px !important;
+    }
+    #searchinput{
+        position: absolute;
+        float:right;
+    }
+    
+
+    /* title Css*/
+    .title h1{
+        top: 6em;
+        left: 1em;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }  
+    .title p{
+        top: 15em;
+        left: 2em;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+        line-height: 17px;
+        max-width: 90%;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 35px;
+    top: 15em;
+    }
+
+    #headingchar{
+    top: 15.5em;
+    font-size: 16px;
+  }
+
+     /* Cards Css */
+     .custom-card{
+        margin-left: 10px;
+        width: 150px;
+        height: 220px;
+    }
+    .custom-card-image{
+        width: 150px;
+        height: 220px;
+    }
+
+
+    /* stan-lee */
+    .stan h1{
+        top: 34em;
+        right: 1.5em;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }
+    .stan p{
+        top: 64em;
+        right: 3em;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+        line-height: 17px;
+        max-width: 75%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 35px;
+        top: 54em;
+    }
+
+    #headingcom{
+        top: 54.5em;
+        font-size: 16px;
+    }
+
+    /* footer css */
+    .footerContent p{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .footerContent p a img{
+        width: 12px;
+        height: 12px;
+        margin-bottom: 2px;
+    }
+
+}
+
+/* Medium Mobile Css */
+@media only screen and (min-width:375px) and (max-width: 426px) {
+    
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 3px; 
+    }
+
+    #searchli{
+        margin-right: 30px;
+        text-align: right;
+        
+    }
+    nav ul li input{
+        font-size: 10px !important;
+        border-radius: 6px !important;
+        padding:2px 5px 2px 5px !important;
+        margin: 0 !important;
+        width: 50%;
+        border: none;
+    }
+    nav ul li button{
+        padding: 2px;
+        border-radius: 10px;
+        border: none;
+        margin: 0;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 10px !important;
+        height: 12px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 15px !important;
+        font-size: 15px !important;
+    }
+    
+    .logo{
+        display: inline;
+        width: 80px !important;
+        height: 32px !important;
+    }
+    #searchinput{
+        position: absolute;
+        float:right;
+    }
+     
+    /* title css */
+    .title img{
+        content: url("https://res.cloudinary.com/duoe2yt88/image/upload/v1657346041/Images/titlebgph_bziy3s.jpg");
+    }
+    .title h1{
+        top: 5.5em;
+        left: 1em;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }  
+    .title p{
+        top: 13.5em;
+        left: 2em;
+        font-size: 10px ;
+        letter-spacing: 0.7px;
+        line-height: 13px;
+        max-width: 90%;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 30px;
+    top: 13em;
+    }
+
+    #headingchar{
+    top: 16.5em;
+    font-size: 13px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 10px;
+        width: 130px;
+        height: 200px;
+    }
+    .custom-card-image{
+        width: 130px;
+        height: 200px;
+    }
+
+    /* stan-lee */
+    .stan img{
+        content: url("https://res.cloudinary.com/duoe2yt88/image/upload/v1657349276/Images/stan-leeph_vg7it6.jpg");
+    }
+    .stan h1{
+        top: 36.5em;
+        right: 1.5em;
+        font-size: 17px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }
+    .stan p{
+        top: 64.2em;
+        right: 2.8em;
+        font-size: 10px;
+        letter-spacing: 0.7px;
+        line-height: 13px;
+        max-width: 90%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 50px;
+        top: 46.5em;
+    }
+
+    #headingcom{
+        top: 57.8em;
+        font-size: 13px;
+    }
+
+    /* footer css */
+    .footerContent p{
+        padding: 8px;
+        font-size: 10px;
+    }
+    .footerContent p a img{
+        width: 10px;
+        height: 10px;
+        margin-bottom: 2px;
+    }
+
+}
+
+/*  small Mobile Css */
+@media only screen and (max-width:374px){
+    
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 3px; 
+    }
+
+    #searchli{
+        margin-right: 30px;
+        text-align: right;
+        
+    }
+    nav ul li input{
+        font-size: 10px !important;
+        border-radius: 6px !important;
+        padding:2px 5px 2px 5px !important;
+        margin: 0 !important;
+        width: 50%;
+        border: none;
+    }
+    nav ul li button{
+        padding: 2px;
+        border-radius: 10px;
+        border: none;
+        margin: 0;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 10px !important;
+        height: 12px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 15px !important;
+        font-size: 15px !important;
+    }
+    
+    .logo{
+        display: inline;
+        width: 80px !important;
+        height: 32px !important;
+    }
+    #searchinput{
+        position: absolute;
+        float:right;
+    }
+     
+    /* title css */
+    .title img{
+        content: url("https://res.cloudinary.com/duoe2yt88/image/upload/v1657346041/Images/titlebgph_bziy3s.jpg");
+    }
+    .title h1{
+        top: 5.6em;
+        left: 1.5em;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }  
+    .title p{
+        top: 14em;
+        left: 2.8em;
+        font-size: 8.5px ;
+        letter-spacing: 0.5px;
+        line-height: 13px;
+        max-width: 90%;
+    }
+
+    /* parallelogram characters */
+  #par_char {
+    width: 90%;
+    height: 30px;
+    top: 11.3em;
+    }
+
+    #headingchar{
+    top: 14.3em;
+    font-size: 13px;
+  }
+
+    /* Cards Css */
+    .custom-card{
+        margin-left: 10px;
+        width: 110px;
+        height: 180px;
+    }
+    .custom-card-image{
+        width: 110px;
+        height: 180px;
+    }
+
+    /* stan-lee */
+    .stan img{
+        content: url("https://res.cloudinary.com/duoe2yt88/image/upload/v1657349276/Images/stan-leeph_vg7it6.jpg");
+    }
+    .stan h1{
+        top: 37.5em;
+        right: 1.5em;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-shadow: 15px black;
+    }
+    .stan p{
+        top: 68em;
+        right: 2.8em;
+        font-size: 8.5px;
+        letter-spacing: 0.5px;
+        line-height: 13px;
+        max-width: 90%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 30px;
+        top: 42em;
+    }
+
+    #headingcom{
+        top: 52em;
+        font-size: 13px;
+    }
+
+    /* footer css */
+    .footerContent p{
+        padding: 8px;
+        font-size: 10px;
+    }
+    .footerContent p a img{
+        width: 10px;
+        height: 10px;
+        margin-bottom: 2px;
+    }
+
+}
+

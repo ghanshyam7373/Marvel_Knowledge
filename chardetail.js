@@ -5,6 +5,8 @@ const timeStamp = new Date().getTime()
 const BASE_URL="https://gateway.marvel.com:443/v1/public/"
 const hash =(privateKey,apiKey)=>{ return  CryptoJS.MD5(`${timeStamp}${privateKey}${apiKey}`)}
 console.log(hash().toString());
+window.location.href = "chardetail.html";
+
 
 const parentCharacterCard = document.getElementById('characters_card');
 
@@ -40,8 +42,6 @@ const cards = (imgUrl)=>{
     })
     return promise;
 }
-
-// https://gateway.marvel.com:443/v1/public/characters?name=Thor&apikey=7514ef1d59cb5ef96f7a8bc5a3aaac8a
 
 const getCharacterDetail = (id)=>{
     sendXMLRequest("GET",`${BASE_URL}characters?id=${id}&ts=${timeStamp}&apikey=${apiKey}&hash=${hash(privateKey,apiKey).toString()}`).then(resp=>{

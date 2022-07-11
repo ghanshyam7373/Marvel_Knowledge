@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="https://res.cloudinary.com/duoe2yt88/image/upload/v1657117474/Images/marvel_ico_ku9fqz.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,34 +20,49 @@
     </title>
 </head>
 <body>
-    <nav>
+    <nav> 
         <ul>
             <li><a href="/index.html"><img class="logo" src="https://res.cloudinary.com/duoe2yt88/image/upload/v1657043045/Images/marvel_dppbnz.png" alt="logo"></a></li>
+            <div id="dropdown" class="dropdown-content">
             <li class="navlist"><a href="/characters.html">Characters</a></li>
             <li class="navlist"><a href="/comics.html">Comics</a></li>
             <li class="navlist"><a href="/creators.html">Creators</a></li>
             <li class="navlist"><a href="/">About</a></li>
+        </div>
             <li id="searchli">
                 <input type="text" id="search" placeholder="Search Here..">
                 <button id="searchinput"><i class="fa fa-search"></i></button>
+
             </li>
             <li>
-                <div class="right"><button class="toggle"><i class="fa fa-bars"></i></button></div>
+                <div class="right"><button class="toggle"onclick={dropdownFunction()}><i class="fa fa-bars"></i></button></div>
             </li>
         </ul>
     </nav>
 
-    <div class="cust_container" id="character">
-        <div class="title cen">
-            <img src="https://res.cloudinary.com/duoe2yt88/image/upload/v1657043044/Images/charbg_ervzfy.jpg" alt="bg1"> 
-            <h1 class="lineUp">Powerful Marvel Characters</h1>
-            <p class="lineUp">Get to know about the hearty heros and incredible villans of Marvel Cinematic Universe</p>
+    <div class="cust_container">
+        <div class="title">
+            <img src="https://res.cloudinary.com/duoe2yt88/image/upload/v1657043049/Images/titlebg_r0w6cy.jpg" alt="bg1">
+            <h1 class="lineUp">Gain Knowledge about Marvel Cinematic Universe</h1>
+            <p class="lineUp">The Marvel Cinematic Universe is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics.</p>
+        </div> 
+        <div class="cen">
+        <span id="par_char"></span></div>
+        <h3 id="headingchar">FEATURED CHARACTERS</h3>
+        <div id="characters_card" class="my-5 owl-carousel owl-theme">
         </div>
-        <div class="cen"><span id="par_char"></span></div>
-        <h3 id="headingchar">MARVEL CHARACTERS LIST</h3>
-        <div id="characters_card" class="my-5 cen"></div>
-        <button id="loadMore" onclick="getCharacters()">Load More</button>
-
+        
+        <div class="stan">
+            <img src="https://res.cloudinary.com/duoe2yt88/image/upload/v1657043045/Images/stan-lee_jr3psk.jpg" alt="stanleebg">
+            <h1>Stan Lee</h1>
+            <p>Stan Lee was an American comic-book writer, editor, and publisher, who was executive vice president and publisher of Marvel Comics.Lee co-created Spider-Man, the Hulk, Doctor Strange, the Fantastic Four, Iron Man, Daredevil, Thor, the X-Men, and many other fictional characters, introducing a thoroughly shared universe into superhero comic books.</p>
+        </div>
+        <div class="cen">
+        <span id="par_com"></span></div>
+        <h3 id="headingcom">FEATURED COMICS</h3>
+        <div id="comics_card" class="my-5 owl-carousel owl-theme">
+        </div>
+        
         <div id="logosimage">
             <img src="https://res.cloudinary.com/duoe2yt88/image/upload/v1657043044/Images/alogos_ptn9wy.jpg" alt="">
         </div>
@@ -61,12 +77,17 @@
             </p>
             </div>
         </footer>
-
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="all.js"></script>
+    <script src="index.js"></script>
+    <script>
+        
+       
+    </script>
+
 </body>
 </html>
