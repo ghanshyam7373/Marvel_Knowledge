@@ -47,20 +47,15 @@ const cards = (imgUrl,charName,id)=>{
    const image = document.createElement('img')
    const cardContent = document.createElement('div')
    const cardTitle = document.createElement('div')  
-   const button = document.createElement('button')
    image.setAttribute('src',imgUrl);
    cardTitle.innerHTML = charName;
-   button.innerHTML = "More";
-//    button.addEventListener('onclick',getCharacterDetail(id))
 
    childCard.classList.add('custom-card')
    image.classList.add('custom-card-image')
    cardContent.classList.add('custom-card-content')
    cardTitle.classList.add('custom-card-title')
-   button.classList.add('custom-card-btn')
 
    cardContent.appendChild(cardTitle);
-   cardContent.appendChild(button);
    childCard.appendChild(image);
    childCard.appendChild(cardContent);
 
@@ -116,19 +111,6 @@ const getCreators = ()=>{
     })
 }
 
-// var ul = document.querySelector('ul');
 
-// const dropdownFunction= () => {
-//     const div = document.createElement('div');
-//     for(let i=0;i<4;i++){
-//         let navlist = document.getElementsByClassName('navlist')[i];
-//         div.append(navlist);
-//         console.log(document.getElementsByClassName('navlist')[i]);
-
-//     }
-//         div.classList.add('navlistdiv');
-//     ul.append('div');
-// }
-    
 addEventListener('onload',getCharacters())
 addEventListener('onload',getComics())

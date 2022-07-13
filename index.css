@@ -51,16 +51,12 @@ nav ul li a{
     background-color: white;
     color: red;
 }
-
-nav ul li input{
-    font-size: 15px !important;
-    border-radius: 10px !important;
-    padding: 5px !important;
-    margin: 0 !important;
+.fa-search{
+    margin: 0px 5px 0px 5px;
 }
 
 nav ul li button{
-    padding: 5px;
+    padding: 5px 8px 5px 8px;
     border-radius: 10px;
     margin: 0;
     background-color: red;
@@ -216,27 +212,6 @@ nav ul li button{
     transform: scale(.9);
     transition: 300ms ease-in-out;
 }   
-.custom-card-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bold;
-    background: none;
-    border: none;
-    outline:none;
-    width: 120px;
-    height: 40px;
-    cursor: pointer;
-    color: white;
-    border: 2px solid white;
-    transition: transform 300ms ease-in-out;
-    text-decoration: none;
-}
-.custom-card-btn:hover{
-    transform: translateY(-3px);
-}
 
 /* Logo image Css */
 #logosimage{
@@ -723,39 +698,35 @@ footer{
 /* small Tablet */
 @media only screen and (min-width:426px) and (max-width: 640px) {
 
-    /* nav css */
-    .toggle{
+     /* nav css */
+     .toggle{
         display: inline;
         background: none;
         border: none;
         color: red;  
-        margin-top: 0px; 
+        margin-top: 3px; 
     }
 
     #searchli{
-        margin-right: 30px;
+        margin-right: 20px;
+        margin-top: 2px;
         text-align: right;
-        
+
     }
-    nav ul li input{
-        font-size: 10px !important;
-        border-radius: 6px !important;
-        padding:3px 6px 3px 6px !important;
-        margin: 0 !important;
-        width: 50%;
-        border: none;
+    .sea{
+        display: none;
     }
     nav ul li button{
-        padding: 0;
+        padding: 2px;
         border-radius: 10px;
         border: none;
-        margin-left: 4px;
+        margin: 0;
         background:none;
         color: red;
     }
     .fa-search{
-        width: 12px !important;
-        height: 14px !important;
+        width: 10px !important;
+        height: 12px !important;
         padding: 5px;
         padding-bottom: 2px;
     }
@@ -770,18 +741,15 @@ footer{
         justify-content: start !important;
         align-items: center !important;
         margin: 0px !important;
-        padding: 12px !important;
-        font-size: 13px !important;
+        padding: 15px !important;
+        font-size: 15px !important;
     }
+    
     
     .logo{
         display: inline;
         width: 90px !important;
         height: 35px !important;
-    }
-    #searchinput{
-        position: absolute;
-        float:right;
     }
     
 
@@ -871,7 +839,7 @@ footer{
 /* Medium Mobile Css */
 @media only screen and (min-width:375px) and (max-width: 426px) {
     
-    /* nav css */
+      /* nav css */
     .toggle{
         display: inline;
         background: none;
@@ -881,17 +849,13 @@ footer{
     }
 
     #searchli{
-        margin-right: 30px;
+        margin-right: 20px;
+        margin-top: 2px;
         text-align: right;
-        
+
     }
-    nav ul li input{
-        font-size: 10px !important;
-        border-radius: 6px !important;
-        padding:2px 5px 2px 5px !important;
-        margin: 0 !important;
-        width: 50%;
-        border: none;
+    .sea{
+        display: none;
     }
     nav ul li button{
         padding: 2px;
@@ -922,14 +886,11 @@ footer{
         font-size: 15px !important;
     }
     
+    
     .logo{
         display: inline;
         width: 80px !important;
         height: 32px !important;
-    }
-    #searchinput{
-        position: absolute;
-        float:right;
     }
      
     /* title css */
@@ -1023,8 +984,8 @@ footer{
 /*  small Mobile Css */
 @media only screen and (max-width:374px){
     
-    /* nav css */
-    .toggle{
+     /* nav css */
+     .toggle{
         display: inline;
         background: none;
         border: none;
@@ -1033,17 +994,13 @@ footer{
     }
 
     #searchli{
-        margin-right: 30px;
+        margin-right: 20px;
+        margin-top: 2px;
         text-align: right;
-        
+
     }
-    nav ul li input{
-        font-size: 10px !important;
-        border-radius: 6px !important;
-        padding:2px 5px 2px 5px !important;
-        margin: 0 !important;
-        width: 50%;
-        border: none;
+    .sea{
+        display: none;
     }
     nav ul li button{
         padding: 2px;
@@ -1074,14 +1031,11 @@ footer{
         font-size: 15px !important;
     }
     
+    
     .logo{
         display: inline;
         width: 80px !important;
         height: 32px !important;
-    }
-    #searchinput{
-        position: absolute;
-        float:right;
     }
      
     /* title css */

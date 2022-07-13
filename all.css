@@ -53,15 +53,12 @@ nav ul li a{
     color: red;
 }
 
-nav ul li input{
-    font-size: 15px !important;
-    border-radius: 10px !important;
-    padding: 5px !important;
-    margin: 0 !important;
+.fa-search{
+    margin: 0px 5px 0px 5px;
 }
 
 nav ul li button{
-    padding: 5px;
+    padding: 5px 8px 5px 8px;
     border-radius: 10px;
     margin: 0;
     background-color: red;
@@ -224,27 +221,6 @@ nav ul li button{
     transform: scale(.9);
     transition: 300ms ease-in-out;
 }   
-.custom-card-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bold;
-    background: none;
-    border: none;
-    outline:none;
-    width: 120px;
-    height: 40px;
-    cursor: pointer;
-    color: white;
-    border: 2px solid white;
-    transition: transform 300ms ease-in-out;
-    text-decoration: none;
-}
-.custom-card-btn:hover{
-    transform: translateY(-3px);
-}
 
 /* button Load Css */
 #loadMore{

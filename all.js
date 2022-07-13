@@ -28,19 +28,15 @@ const cards = (imgUrl,charName)=>{
     const image = document.createElement('img')
     const cardContent = document.createElement('div')
     const cardTitle = document.createElement('div')  
-    const button = document.createElement('button')
     image.setAttribute('src',imgUrl);
     cardTitle.innerHTML = charName;
-    button.innerHTML = "More";
  
     childCard.classList.add('custom-card')
     image.classList.add('custom-card-image')
     cardContent.classList.add('custom-card-content')
     cardTitle.classList.add('custom-card-title')
-    button.classList.add('custom-card-btn')
  
     cardContent.appendChild(cardTitle);
-    cardContent.appendChild(button);
     childCard.appendChild(image);
     childCard.appendChild(cardContent);
  

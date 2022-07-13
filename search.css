@@ -1,0 +1,838 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+/* navbar properties */
+nav{
+    max-width: 100%;
+}
+nav ul{
+    background-color: black;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: start !important;
+    align-items: center !important;
+    margin: 0px !important;
+    padding: 15px !important;
+    font-size: 15px !important;
+}
+
+.logo{
+    width: 110px !important;
+    height: 40px !important;
+}
+
+nav ul li{
+    list-style: none !important;
+}
+.navlist{
+   display: block;
+    padding-left:25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navlist >a:hover{
+    color: rgb(41, 151, 255) !important;
+    transition: 200ms ease-in;
+}
+
+nav ul li a{
+    color: white !important;
+    text-decoration: none !important;
+    letter-spacing: 1px !important;
+}
+
+#searchli{
+    margin-left: auto;
+}
+
+#searchinput:hover{
+    background-color: white;
+    color: red;
+}
+.fa-search{
+    margin: 0px 5px 0px 5px;
+}
+
+nav ul li button{
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    margin: 0;
+    background-color: red;
+    color: white;
+}
+
+.toggle{
+    display: none;
+}
+
+/* title Css*/
+.cust_container{
+    margin:0;
+}
+.cen{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}  
+
+/* search inputbox */
+.searchIpdiv{
+    margin: 50px 30px 30px;
+}
+
+#searchicon{
+    display: none;
+}
+.searchIpdiv hr{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.searchIpdiv ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 5px;
+}
+.searchIpdiv ul li{
+    padding-left: 10px;
+}
+
+.searchIpdiv p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#searchIp{
+    border: none;
+    background: none;  
+    font-size: 28px; 
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.options{
+    background: none;
+    border: none;
+}
+
+/* results row */
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.row hr{
+    width: 80%;
+    margin: 10px;
+}
+
+.result_img img{
+    width: 50%;
+    text-align: right;
+}
+.result_img img:hover{
+    filter:saturate(1.5);
+}
+.col-sm-2, .col-sm-6{
+    padding: 0 !important;
+}
+
+.result_details{
+    padding-top:55px;
+}
+.result_type{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: gray;
+}
+.result_title{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.currentid{
+    color: red;
+}
+
+/* Logo image Css */
+#logosimage{
+    margin:0px;
+    max-width: 100%;
+    max-height: 10%;
+}
+
+#logosimage img{
+    width: 100%;
+    height: 10%;
+}
+
+/* Comics */
+#headingcom{
+    position: absolute;
+    top: 64.5em;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: BOLD;
+}
+
+
+/* laptop large */
+@media only screen and (min-width: 1255px) and (max-width: 1440px) {
+
+/* search inputbox */
+.searchIpdiv{
+    margin: 50px 30px 30px;
+}
+
+.searchIpdiv hr{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.searchIpdiv ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 5px;
+}
+.searchIpdiv ul li{
+    padding-left: 10px;
+}
+
+.searchIpdiv p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#searchIp{
+    border: none;
+    background: none;  
+    font-size: 28px; 
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.options{
+    background: none;
+    border: none;
+}
+
+/* results row */
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.row hr{
+    width: 80%;
+    margin: 10px;
+}
+
+.result_img img{
+    width: 50%;
+    text-align: right;
+}
+.col-sm-2, .col-sm-6{
+    padding: 0 !important;
+}
+
+.result_details{
+    padding-top:55px;
+}
+.result_type{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: gray;
+}
+.result_title{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.currentid{
+    color: red;
+}
+
+}
+
+/* medium large */
+@media only screen and (min-width: 1026px) and (max-width: 1250px) {
+    /* parallelogram characters */
+    .title h1{
+        top: 6em;
+        left: 1.5em;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }  
+    .title p{
+        top: 19.5em;
+        left: 4.2em;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        line-height: 23px;
+        max-width: 80%;
+    }
+
+    #par_char {
+        width: 90%;
+        height: 50px;
+        top: 28em;
+        }
+
+    #headingchar{
+        top: 18.5em;
+    }
+
+    .stan h1{
+        top: 30em;
+        right: 1.5em;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-shadow: 20px black;
+    }
+    
+    .stan p{
+        top: 78em;
+        right: 4.2em;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        line-height: 23px;
+        max-width: 80%;
+    }
+
+    /* parallelogram Comics */
+    #par_com {
+        width: 90%;
+        height: 50px;
+        top: 87em;
+    }
+
+    #headingcom{
+        top: 56em;
+        font-size: 25px;
+    }
+}
+
+
+/* small laptop*/
+@media only screen and (max-width: 1024px) {
+
+        /* search inputbox */
+    .searchIpdiv{
+        margin: 50px 30px 30px;
+    }
+    .searchIpdiv ul{
+        padding-left: 0;
+        padding-top: 5px;
+    }
+    .searchIpdiv ul li{
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    #searchIp{
+        font-size: 28px; 
+    }
+    
+    /* results row */
+    .row{
+        padding: 10px;
+    }
+    
+    .row hr{
+        margin: 10px;
+    }
+    
+    .result_img img{
+        width: 60%;
+    }
+    .result_details{
+        padding-top:10px;
+    }
+
+}
+
+/* small laptop */
+@media only screen and (min-width:769px) and (max-width: 915px) {
+
+    /* navbar css */
+    nav ul{
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+    nav ul li img{
+        width: 90px !important;
+        height: 33px !important;
+    }
+    .navlist{
+         padding-left:15px;
+    }
+    nav ul li input{
+        font-size: 12px !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+    }
+    
+    nav ul li button{
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    /* search inputbox */
+    .searchIpdiv ul li{
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .result_details{
+        padding-top:10px;
+    }
+} 
+
+/* Tablet */
+@media only screen and (min-width:430px) and (max-width: 768px) {
+
+    /* navbar css */
+    nav ul{
+        padding: 10px !important;
+        font-size: 13px !important;
+    }
+    nav ul li img{
+        width: 90px !important;
+        height: 33px !important;
+    }
+    .navlist{
+         padding-left:15px;
+    }
+    nav ul li input{
+        font-size: 13px !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+    }
+    
+    nav ul li button{
+        padding: 3px;
+        border-radius: 10px;
+    }
+    /* search inputbox */
+.searchIpdiv ul li{
+    padding-left: 10px;
+    font-size: 14px;
+}
+#searchIp{
+    font-size: 28px; 
+}
+.searchIpdiv ul li{
+    padding-left: 3px;
+    font-size: 14px;
+}
+#searchIp{  
+    font-size: 25px; 
+    width: 80%;
+}
+#searchicon{
+    display: inline;
+    background: none;
+    border: none;
+    color: red;
+    width: 15%;
+    padding: 5px;
+    text-align: right;
+    margin-left: 25px;
+}
+
+/* results row */
+.row{
+    padding: 10px;
+}
+
+.row hr{
+    margin: 10px;
+}
+
+.result_img img{
+    width: 60%;
+}
+.result_details{
+    padding-top:10px;
+}
+.result_type{
+    font-size: 13px;
+}
+.result_title{
+    font-size: 25px;
+}
+
+}
+
+/* small Tablet */
+@media only screen and (min-width:426px) and (max-width: 640px) {
+
+/* nav css */
+.toggle{
+    display: inline;
+    background: none;
+    border: none;
+    color: red;  
+    margin-top: 3px; 
+}
+
+#searchli{
+    margin-right: 20px;
+    margin-top: 4px;
+    text-align: right;
+
+}
+.sea{
+    display: none;
+}
+nav ul li button{
+    padding: 2px;
+    border-radius: 10px;
+    border: none;
+    margin: 0;
+    background:none;
+    color: red;
+}
+.fa-search{
+    width: 10px !important;
+    height: 12px !important;
+    padding: 5px;
+    padding-bottom: 2px;
+}
+.navlist{
+    display: none;
+}
+
+nav ul{
+    background-color: black;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: start !important;
+    align-items: center !important;
+    margin: 0px !important;
+    padding: 15px !important;
+    font-size: 15px !important;
+}
+
+.logo{
+    display: inline;
+    width: 100px !important;
+    height: 40px !important;
+}
+
+
+/* searchdiv css */
+.searchIpdiv ul li{
+    padding-left: 3px;
+    font-size: 14px;
+}
+#searchIp{  
+    font-size: 25px; 
+    width: 80%;
+}
+#searchicon{
+    display: inline;
+    background: none;
+    border: none;
+    color: red;
+    width: 15%;
+    padding: 5px;
+    text-align: right;
+}
+
+/* results row */
+.row{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.row>*{
+    width: 50% !important;
+}
+
+.row hr{
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.result_img img{
+    width: 50%;
+    padding-left: 25px;
+    text-align: right;
+}
+.col-sm-2, .col-sm-6{
+    padding: 0 !important;
+}
+
+.result_details{
+    padding-top:20px;
+}
+.result_type{
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: gray;
+}
+.result_title{
+    margin: 0;
+    text-align: left;
+    font-size: 22px;
+}
+
+
+}
+
+/* Medium Mobile Css */
+@media only screen and (min-width:375px) and (max-width: 426px) {
+    
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 3px; 
+    }
+
+    #searchli{
+        margin-right: 20px;
+        margin-top: 4px;
+        text-align: right;
+
+    }
+    .sea{
+        display: none;
+    }
+    nav ul li button{
+        padding: 2px;
+        border-radius: 10px;
+        border: none;
+        margin: 0;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 10px !important;
+        height: 12px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 15px !important;
+        font-size: 15px !important;
+    }
+    
+    .logo{
+        display: inline;
+        width: 80px !important;
+        height: 32px !important;
+    }
+
+
+    /* searchdiv css */
+    .searchIpdiv ul li{
+        padding-left: 3px;
+        font-size: 13px;
+    }
+    #searchIp{  
+        font-size: 25px; 
+        width: 80%;
+    }
+    .options{
+        background: none;
+        border: none;
+    }
+    #searchicon{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;
+        width: 15%;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    /* results row */
+    .row{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .row>*{
+        width: 50% !important;
+    }
+    
+    .row hr{
+        width: 100%;
+        /* margin: 10px; */
+    }
+    
+    .result_img img{
+        width: 50%;
+        padding-left: 25px;
+        text-align: right;
+    }
+    .col-sm-2, .col-sm-6{
+        padding: 0 !important;
+    }
+    
+    .result_details{
+        padding-top:10px;
+    }
+    .result_type{
+        margin: 0;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: gray;
+    }
+    .result_title{
+        margin: 0;
+        text-align: left;
+        font-size: 18px;
+    }
+
+}
+
+/*  small Mobile Css */
+@media only screen and (max-width:374px){
+    
+    /* nav css */
+    .toggle{
+        display: inline;
+        background: none;
+        border: none;
+        color: red;  
+        margin-top: 3px; 
+    }
+
+    #searchli{
+        margin-right: 20px;
+        margin-top: 2px;
+        text-align: right;
+
+    }
+    .sea{
+        display: none;
+    }
+    nav ul li button{
+        padding: 2px;
+        border-radius: 10px;
+        border: none;
+        margin: 0;
+        background:none;
+        color: red;
+    }
+    .fa-search{
+        width: 10px !important;
+        height: 12px !important;
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    .navlist{
+        display: none;
+    }
+
+    nav ul{
+        background-color: black;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin: 0px !important;
+        padding: 15px !important;
+        font-size: 15px !important;
+    }
+    
+    .logo{
+        width: 80px !important;
+        height: 32px !important;
+    }
+     
+.searchIpdiv ul li{
+    padding-left: 3px;
+    font-size: 13px;
+}
+#searchIp{  
+    font-size: 25px; 
+    width: 80%;
+}
+.options{
+    background: none;
+    border: none;
+}
+#searchicon{
+    display: inline;
+    background: none;
+    border: none;
+    color: red;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* results row */
+.row{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.row>*{
+    width: 50% !important;
+}
+
+.row hr{
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.result_img img{
+    width: 50%;
+    padding-left: 25px;
+    text-align: right;
+}
+.col-sm-2, .col-sm-6{
+    padding: 0 !important;
+}
+
+.result_details{
+    padding-top:10px;
+}
+.result_type{
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: gray;
+}
+.result_title{
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+}
+
+}
+
