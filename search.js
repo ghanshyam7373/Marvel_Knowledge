@@ -1,14 +1,11 @@
-const privateKey = '1fdc7c01b12cf092c6cd44238c94cc728ab7d9c2'
-const apiKey= '7514ef1d59cb5ef96f7a8bc5a3aaac8a'
+import { APIKEY,PRIVATEKEY } from "./key.js"
+const privateKey = PRIVATEKEY
+const apiKey= APIKEY
 const timeStamp = new Date().getTime()
 
 const BASE_URL="https://gateway.marvel.com:443/v1/public/"
 const hash =(privateKey,apiKey)=>{ return  CryptoJS.MD5(`${timeStamp}${privateKey}${apiKey}`)}
 console.log(hash().toString());
-
-const randomNo= ()=>{
-    return Math.floor(Math.random()*2000)
-}
 
 const parentDiv = document.getElementById('results');
 
@@ -66,8 +63,7 @@ const sendXMLRequest=(method,url,data)=>{
     })
     return promise;
 }
-
-
+var flag =[]
 const getDetails = () =>{
     
     const searchIp = document.getElementById('searchIp').value;
@@ -76,7 +72,14 @@ const getDetails = () =>{
         parentDiv.innerHTML = '';
     getCharacters(searchIp)
     getComics(searchIp)
-    getCreators(searchIp)}
+    getCreators(searchIp)
+    // if(flag[0]===1 && flag[1]===1 && flag[2]===1){
+    //     var h4 = document.createElement('h4');
+    //         h4.textContent="No Result Found";
+    //         parentDiv.append(h4);
+    // }
+}
+
     else if (document.getElementById('characters').className === 'options currentid'){
         parentDiv.innerHTML = '';
         getCharacters(searchIp)}
@@ -92,10 +95,11 @@ const getDetails = () =>{
     // characters
 const getCharacters = (searchIp) =>{
     sendXMLRequest("GET",`${BASE_URL}characters?nameStartsWith=${searchIp}&ts=${timeStamp}&apikey=${apiKey}&hash=${hash(privateKey,apiKey).toString()}`).then(resp=>{
-        if(resp.data.results===null){
-            var h4 = document.createElement('h4');
-            h4.textContent="No Result Found";
-            parentDiv.append(h4);
+        if(resp.data.results.length===0){
+            flag.push(1)
+        }
+        else{
+            flag.push(0)
         }
         resp.data.results.map((item)=>{
             parentDiv.append(resultrow(`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`,item.name,'character'))
@@ -107,6 +111,11 @@ const getCharacters = (searchIp) =>{
     // comics
 const getComics = (searchIp) =>{
     sendXMLRequest("GET",`${BASE_URL}comics?title=${searchIp}&ts=${timeStamp}&apikey=${apiKey}&hash=${hash(privateKey,apiKey).toString()}`).then(resp=>{
+        if(resp.data.results.length===0){
+            flag.push(1)
+        }
+        else{
+        flag.push(0)}
         resp.data.results.map((item)=>{
             parentDiv.append(resultrow(`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`,item.title,'comic'))
         })
@@ -118,6 +127,12 @@ const getComics = (searchIp) =>{
     // creators
 const getCreators = (searchIp) =>{
     sendXMLRequest("GET",`${BASE_URL}creators?firstName=${searchIp}&ts=${timeStamp}&apikey=${apiKey}&hash=${hash(privateKey,apiKey).toString()}`).then(resp=>{
+        if(resp.data.results.length===0){
+            flag.push(1)
+        }
+        else{
+            flag.push(0)
+        }
         resp.data.results.map((item)=>{
             parentDiv.append(resultrow(`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`,item.fullName,'creator'))
         })

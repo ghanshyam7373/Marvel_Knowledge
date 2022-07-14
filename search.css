@@ -27,7 +27,7 @@ nav ul li{
     list-style: none !important;
 }
 .navlist{
-   display: block;
+   display: inline;
     padding-left:25px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -477,19 +477,10 @@ nav ul li button{
 @media only screen and (min-width:426px) and (max-width: 640px) {
 
 /* nav css */
-.toggle{
-    display: inline;
-    background: none;
-    border: none;
-    color: red;  
-    margin-top: 3px; 
-}
-
 #searchli{
-    margin-right: 20px;
-    margin-top: 4px;
-    text-align: right;
-
+    right: 25px;
+    top: 15px;
+    position: absolute;
 }
 .sea{
     display: none;
@@ -508,25 +499,33 @@ nav ul li button{
     padding: 5px;
     padding-bottom: 2px;
 }
-.navlist{
-    display: none;
-}
 
 nav ul{
-    background-color: black;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: start !important;
-    align-items: center !important;
-    margin: 0px !important;
-    padding: 15px !important;
+    padding: 8px 15px 5px 15px !important;
     font-size: 15px !important;
 }
+.navlist{
+    display: inline;
+     padding:10px 10px 0px 5px;
+     font-size: 14px;
+     text-align: center;
+ }
+.navlistdiv{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+}    
 
 .logo{
     display: inline;
-    width: 100px !important;
-    height: 40px !important;
+    width: 90px !important;
+    height: 35px !important;
+}
+.logoli{
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -597,19 +596,10 @@ nav ul{
 @media only screen and (min-width:375px) and (max-width: 426px) {
     
     /* nav css */
-    .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 3px; 
-    }
-
     #searchli{
-        margin-right: 20px;
-        margin-top: 4px;
-        text-align: right;
-
+        right: 25px;
+        top: 12px;
+        position: absolute;
     }
     .sea{
         display: none;
@@ -628,25 +618,33 @@ nav ul{
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 15px !important;
+        padding: 8px 15px 5px 15px !important;
         font-size: 15px !important;
     }
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 12px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }    
     
     .logo{
         display: inline;
         width: 80px !important;
         height: 32px !important;
+    }
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
 
@@ -720,19 +718,10 @@ nav ul{
 @media only screen and (max-width:374px){
     
     /* nav css */
-    .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 3px; 
-    }
-
     #searchli{
-        margin-right: 20px;
-        margin-top: 2px;
-        text-align: right;
-
+        right: 25px;
+        top: 12px;
+        position: absolute;
     }
     .sea{
         display: none;
@@ -751,24 +740,32 @@ nav ul{
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 15px !important;
+        padding: 8px 15px 5px 15px !important;
         font-size: 15px !important;
     }
-    
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 12px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }
     .logo{
+        display: inline;
         width: 80px !important;
         height: 32px !important;
+    }
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
      
 .searchIpdiv ul li{

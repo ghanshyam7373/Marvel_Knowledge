@@ -28,7 +28,7 @@ nav ul li{
 }
 
 .navlist{
-   display: block;
+   display: inline;
     padding-left:25px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -575,64 +575,55 @@ font-size: 18px;
 @media only screen and (min-width:426px) and (max-width: 640px) {
 
     /* nav css */
-    .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 0px; 
-    }
-
     #searchli{
-        margin-right: 30px;
-        text-align: right;
-        
+        right: 25px;
+        top: 15px;
+        position: absolute;
     }
-    nav ul li input{
-        font-size: 10px !important;
-        border-radius: 6px !important;
-        padding:3px 6px 3px 6px !important;
-        margin: 0 !important;
-        width: 50%;
-        border: none;
+    .sea{
+        display: none;
     }
     nav ul li button{
-        padding: 0;
+        padding: 2px;
         border-radius: 10px;
         border: none;
-        margin-left: 4px;
+        margin: 0;
         background:none;
         color: red;
     }
     .fa-search{
-        width: 12px !important;
-        height: 14px !important;
+        width: 10px !important;
+        height: 12px !important;
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 12px !important;
-        font-size: 13px !important;
+        padding: 8px 15px 5px 15px !important;
+        font-size: 15px !important;
     }
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 14px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }    
     
     .logo{
         display: inline;
         width: 90px !important;
         height: 35px !important;
     }
-    #searchinput{
-        position: absolute;
-        float:right;
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
     
 
@@ -672,6 +663,9 @@ font-size: 18px;
         width: 115px;
         height: 170px;
     }
+    .custom-card-title{
+        font-size: 15px;
+    }
 
     #loadMore{
         padding: 10px 18px 8px 18px;
@@ -697,26 +691,13 @@ font-size: 18px;
 @media only screen and (min-width:374px) and (max-width: 426px) {
     
     /* nav css */
-    .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 3px; 
-    }
-
     #searchli{
-        margin-right: 30px;
-        text-align: right;
-        
+        right: 25px;
+        top: 12px;
+        position: absolute;
     }
-    nav ul li input{
-        font-size: 10px !important;
-        border-radius: 6px !important;
-        padding:2px 5px 2px 5px !important;
-        margin: 0 !important;
-        width: 50%;
-        border: none;
+    .sea{
+        display: none;
     }
     nav ul li button{
         padding: 2px;
@@ -732,29 +713,33 @@ font-size: 18px;
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 15px !important;
+        padding: 8px 15px 5px 15px !important;
         font-size: 15px !important;
     }
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 12px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }    
     
     .logo{
         display: inline;
         width: 80px !important;
         height: 32px !important;
     }
-    #searchinput{
-        position: absolute;
-        float:right;
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
      
     /* title css */
@@ -775,11 +760,11 @@ font-size: 18px;
   #par_char {
     width: 90%;
     height: 30px;
-    top: 10.7em;
+    top: 11.3em;
     }
 
     #headingchar{
-    top: 13em;
+    top: 13.5em;
     font-size: 14px;
   }
 
@@ -793,7 +778,9 @@ font-size: 18px;
         width: 115px;
         height: 180px;
     }
-
+    .custom-card-title{
+        font-size: 13px;
+    }
     #loadMore{
         padding: 8px 18px 8px 18px;
         margin-bottom: 20px;
@@ -817,27 +804,14 @@ font-size: 18px;
 /*  small Mobile Css */
 @media only screen and (max-width:374px){
     
-    /* nav css */
-    .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 3px; 
+     /* nav css */
+     #searchli{
+        right: 25px;
+        top: 12px;
+        position: absolute;
     }
-
-    #searchli{
-        margin-right: 30px;
-        text-align: right;
-        
-    }
-    nav ul li input{
-        font-size: 10px !important;
-        border-radius: 6px !important;
-        padding:2px 5px 2px 5px !important;
-        margin: 0 !important;
-        width: 50%;
-        border: none;
+    .sea{
+        display: none;
     }
     nav ul li button{
         padding: 2px;
@@ -853,29 +827,32 @@ font-size: 18px;
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 15px !important;
+        padding: 8px 15px 5px 15px !important;
         font-size: 15px !important;
     }
-    
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 12px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }
     .logo{
         display: inline;
         width: 80px !important;
         height: 32px !important;
     }
-    #searchinput{
-        position: absolute;
-        float:right;
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
      
     /* title css */
@@ -914,7 +891,9 @@ font-size: 18px;
         width: 100px;
         height: 150px;
     }
-
+    .custom-card-title{
+        font-size: 12px;
+    }
     #loadMore{
         padding: 8px 18px 8px 18px;
         margin-bottom: 20px;

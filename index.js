@@ -1,5 +1,6 @@
-const privateKey = '1fdc7c01b12cf092c6cd44238c94cc728ab7d9c2'
-const apiKey= '7514ef1d59cb5ef96f7a8bc5a3aaac8a'
+import { APIKEY,PRIVATEKEY } from "./key.js";
+const privateKey = PRIVATEKEY
+const apiKey= APIKEY
 const timeStamp = new Date().getTime()
 var $character_owl = $("#characters_card");
 var $comic_owl = $("#comics_card");

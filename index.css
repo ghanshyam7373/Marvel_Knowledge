@@ -27,7 +27,7 @@ nav ul li{
     list-style: none !important;
 }
 .navlist{
-   display: block;
+   display: inline;
     padding-left:25px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -61,10 +61,6 @@ nav ul li button{
     margin: 0;
     background-color: red;
     color: white;
-}
-
-.toggle{
-    display: none;
 }
 
 /* title Css*/
@@ -699,19 +695,10 @@ footer{
 @media only screen and (min-width:426px) and (max-width: 640px) {
 
      /* nav css */
-     .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 3px; 
-    }
-
-    #searchli{
-        margin-right: 20px;
-        margin-top: 2px;
-        text-align: right;
-
+     #searchli{
+        right: 25px;
+        top: 15px;
+        position: absolute;
     }
     .sea{
         display: none;
@@ -730,26 +717,33 @@ footer{
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 15px !important;
+        padding: 8px 15px 5px 15px !important;
         font-size: 15px !important;
     }
-    
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 14px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }    
     
     .logo{
         display: inline;
         width: 90px !important;
         height: 35px !important;
+    }
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
     
 
@@ -792,7 +786,9 @@ footer{
         width: 150px;
         height: 220px;
     }
-
+    .custom-card-title{
+        font-size: 15px;
+    }
 
     /* stan-lee */
     .stan h1{
@@ -839,20 +835,11 @@ footer{
 /* Medium Mobile Css */
 @media only screen and (min-width:375px) and (max-width: 426px) {
     
-      /* nav css */
-    .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 3px; 
-    }
-
-    #searchli{
-        margin-right: 20px;
-        margin-top: 2px;
-        text-align: right;
-
+     /* nav css */
+     #searchli{
+        right: 25px;
+        top: 12px;
+        position: absolute;
     }
     .sea{
         display: none;
@@ -871,26 +858,33 @@ footer{
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 15px !important;
+        padding: 8px 15px 5px 15px !important;
         font-size: 15px !important;
     }
-    
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 12px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }    
     
     .logo{
         display: inline;
         width: 80px !important;
         height: 32px !important;
+    }
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
      
     /* title css */
@@ -917,11 +911,11 @@ footer{
   #par_char {
     width: 90%;
     height: 30px;
-    top: 13em;
+    top: 13.4em;
     }
 
     #headingchar{
-    top: 16.5em;
+    top: 16.8em;
     font-size: 13px;
   }
 
@@ -934,6 +928,9 @@ footer{
     .custom-card-image{
         width: 130px;
         height: 200px;
+    }
+    .custom-card-title{
+        font-size: 13px;
     }
 
     /* stan-lee */
@@ -960,11 +957,11 @@ footer{
     #par_com {
         width: 90%;
         height: 50px;
-        top: 46.5em;
+        top: 47em;
     }
 
     #headingcom{
-        top: 57.8em;
+        top: 58.5em;
         font-size: 13px;
     }
 
@@ -984,19 +981,10 @@ footer{
 /*  small Mobile Css */
 @media only screen and (max-width:374px){
      /* nav css */
-     .toggle{
-        display: inline;
-        background: none;
-        border: none;
-        color: red;  
-        margin-top: 3px; 
-    }
-
     #searchli{
-        margin-right: 20px;
-        margin-top: 2px;
-        text-align: right;
-
+        right: 25px;
+        top: 12px;
+        position: absolute;
     }
     .sea{
         display: none;
@@ -1015,26 +1003,32 @@ footer{
         padding: 5px;
         padding-bottom: 2px;
     }
-    .navlist{
-        display: none;
-    }
 
     nav ul{
-        background-color: black;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: start !important;
-        align-items: center !important;
-        margin: 0px !important;
-        padding: 15px !important;
+        padding: 8px 15px 5px 15px !important;
         font-size: 15px !important;
     }
-    
-    
+    .navlist{
+        display: inline;
+         padding:10px 10px 0px 5px;
+         font-size: 12px;
+         text-align: center;
+     }
+    .navlistdiv{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+    }
     .logo{
         display: inline;
         width: 80px !important;
         height: 32px !important;
+    }
+    .logoli{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
      
     /* title css */
@@ -1078,6 +1072,9 @@ footer{
     .custom-card-image{
         width: 110px;
         height: 180px;
+    }
+    .custom-card-title{
+        font-size: 12px;
     }
 
     /* stan-lee */
