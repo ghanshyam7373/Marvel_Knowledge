@@ -1,0 +1,4 @@
+const APIKEY='7514ef1d59cb5ef96f7a8bc5a3aaac8a'
+const PRIVATEKEY='1fdc7c01b12cf092c6cd44238c94cc728ab7d9c2'
+
+export {APIKEY,PRIVATEKEY}
